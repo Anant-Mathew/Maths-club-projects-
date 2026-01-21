@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1.0">
+         <link  rel = "shortcut icon" href="Maths_quis_logo.ico" >
+        <title>Maths Quiz</title>
+        <link  rel = "stylesheet" href="Style.css" >
+    </head>
+    <body>
+        <h1 id="Title">MATHS QUIZ</h1>
+        <div class="container">
+            <div id="Mainbox" >
+                <label class="elem">Select the types of questions you want :</label>
+                <br>
+                <div id="Options">
+                    <br>
+                    <input type ="checkbox" " value = "+" id = "add" class="elem">
+                    <label for="add" class="elem">Addition</label>
+                    
+                    <input type ="checkbox" " value = "-" id = "sub" class="elem">
+                    <label for="sub" class="elem">Subtraction</label>
+                    <br>
+                    <input type ="checkbox" " value = "*" id = "mult" class="elem">
+                    <label for="mult" class="elem">Multiplication</label>
+                    
+                    <input type ="checkbox" " value = "/" id = "divi" class="elem">
+                    <label for="divi" class="elem">Division</label>
+                    <br>
+                </div>
+                <br>
+                <label class="elem" style="font-size: 1.5rem;">Click on Start button to start the Quiz</label>
+                <br>
+                <button id = "Submit" onclick="start()"  class="elem">Start</button>
+            </div>
+            <div id="QuizBox" hidden>
+                <h1 id ='resposce' hidden class="elem"></h1>
+                <span id = "score" style="text-align: right;">Score : 0/0</span>
+                <div id="Options" class="elem">
+                    <h2 id="question" class="elem"></h2>    
+                </div>
+                <button id = "option1" onclick="checkAnswer(this)" value="0" class="elem"></button>
+                <button id = "option2" onclick="checkAnswer(this)" value="1" class="elem"></button>
+                
+                <button id = "option3" onclick="checkAnswer(this)" value="2" class="elem"></button>
+                <button id = "option4" onclick="checkAnswer(this)" value="3" class="elem"></button>
+                <br>
+                <button id = "return" onclick="exit()">Back</button>
+            </div>
+       </div>
+        <script src="index.js"></script> 
+    </body>
+</html>
